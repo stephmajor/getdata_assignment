@@ -20,14 +20,17 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 The assignment contains the following files:
 ============================================
 
-- README.md (this file)
+- <b>README.md</b> (this file)
 
-- run_analysis.R 
+- <b>run_analysis.R</b>
+
     Script file containing series of command to produce the 2 required datasets. To prepare the tidy datasets,execute the command source("run_analysis.R") from a folder that contains the unzipped assignment data (folder named "UCI HAR Datset"). More details about how the script is structured is contained as comments within the script itself. Note that several intermediate variables are left in the environment once the script completes for further inspection of intermediate data if necessary.
 
-- features_info.txt
+- <b>features_info.txt</b>
+
     The detailed code book for all variables contained in the main analysis dataset (<b>analysis_data</b> produced by the script)
 
-- averaged_info.txt
+- <b>averaged_info.txt</b>
+
     The detailed code book for all variables contained in the summary dataset (<b>averaged_data</b> produced by the script)
     
