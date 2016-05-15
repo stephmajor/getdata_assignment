@@ -24,7 +24,7 @@ The assignment contains the following files:
 
 - <b>run_analysis.R</b>
 
-    Script file containing series of command to produce the 2 required datasets. To prepare the tidy datasets,execute the command source("run_analysis.R") from a folder that contains the unzipped assignment data (folder named "UCI HAR Datset"). More details about how the script is structured is contained as comments within the script itself. Note that several intermediate variables are left in the environment once the script completes for further inspection of intermediate data if necessary.
+    Script file containing series of command to produce the 2 required datasets. To prepare the tidy datasets,execute the command source("run_analysis.R") from a folder that contains the unzipped assignment data (folder named "UCI HAR Datset"). More details about how the script is structured is contained as comments within the script itself. The main product of this script is 2 data frames containing the tidy datasets: <b>analysis_data</b> and <b>averaged_data</b>. Note that several intermediate variables are left in the environment once the script completes for further inspection of intermediate data if necessary.
 
 - <b>features_info.txt</b>
 
