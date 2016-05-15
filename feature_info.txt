@@ -1,0 +1,116 @@
+Code Book for the Assignment - main dataset
+===========================================
+
+*note: this is adapted from the original info document provided with the assignment data
+
+This main dataset is generated from the run_analysis.R script and is called analysis_data.
+
+for each observation the labelling columns are:
+
+subject: a factor variable anonymously identifying the person carrying the phone during the observation
+activity: a factor variable identifying the activity performed by the subject during the observation
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals timeAcc-XYZ and timeGyro-XYZ. These time domain signals were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (timebodyAcc-XYZ and timegravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (timebodyAccJerk-XYZ and timebodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (timebodyAccMag, timegravityAccMag, timebodyAccJerkMag, timebodyGyroMag, timebodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing frequencybodyAcc-XYZ, frequencybodyAccJerk-XYZ, frequencybodyGyro-XYZ, frequencybodyAccJerkMag, frequencybodyGyroMag, frequencybodyGyroJerkMag. 
+
+These signals were used to estimate variables of the feature vector for each pattern:
+
+'[estimate]' is used to represent the variable estimated from the signals
+'[xyz]' is used to denote 3-axial signals in the X, Y and Z directions.
+
+timebodyacc[estimate][xyz]
+timegravityacc[estimate][xyz]
+timebodyaccjerk[estimate][xyz]
+timebodygyro[estimate][xyz]
+timebodygyrojerk[estimate][xyz]
+timebodyaccmag[estimate]
+timegravityaccmag[estimate]
+timebodyaccjerkmag[estimate]
+timebodygyromag[estimate]
+timebodygyrojerkmag[estimate]
+frequencybodyacc[estimate][xyz]
+frequencybodyaccjerk[estimate][xyz]
+frequencybodygyro[estimate][xyz]
+frequencybodyaccmag[estimate]
+frequencybodyaccjerkmag[estimate]
+frequencybodygyromag[estimate]
+frequencybodygyrojerkmag[estimate]
+
+The set of variables that were estimated from these signals are: 
+
+mean: Mean value
+std: Standard deviation
+
+The complete expanded list of variables for all observations is as follow:
+
+ [1] "subject"                         
+ [2] "activity"                        
+ [3] "timebodyaccmeanx"                
+ [4] "timebodyaccmeany"                
+ [5] "timebodyaccmeanz"                
+ [6] "timebodyaccstdx"                 
+ [7] "timebodyaccstdy"                 
+ [8] "timebodyaccstdz"                 
+ [9] "timegravityaccmeanx"             
+[10] "timegravityaccmeany"             
+[11] "timegravityaccmeanz"             
+[12] "timegravityaccstdx"              
+[13] "timegravityaccstdy"              
+[14] "timegravityaccstdz"              
+[15] "timebodyaccjerkmeanx"            
+[16] "timebodyaccjerkmeany"            
+[17] "timebodyaccjerkmeanz"            
+[18] "timebodyaccjerkstdx"             
+[19] "timebodyaccjerkstdy"             
+[20] "timebodyaccjerkstdz"             
+[21] "timebodygyromeanx"               
+[22] "timebodygyromeany"               
+[23] "timebodygyromeanz"               
+[24] "timebodygyrostdx"                
+[25] "timebodygyrostdy"                
+[26] "timebodygyrostdz"                
+[27] "timebodygyrojerkmeanx"           
+[28] "timebodygyrojerkmeany"           
+[29] "timebodygyrojerkmeanz"           
+[30] "timebodygyrojerkstdx"            
+[31] "timebodygyrojerkstdy"            
+[32] "timebodygyrojerkstdz"            
+[33] "timebodyaccmagmean"              
+[34] "timebodyaccmagstd"               
+[35] "timegravityaccmagmean"           
+[36] "timegravityaccmagstd"            
+[37] "timebodyaccjerkmagmean"          
+[38] "timebodyaccjerkmagstd"           
+[39] "timebodygyromagmean"             
+[40] "timebodygyromagstd"              
+[41] "timebodygyrojerkmagmean"         
+[42] "timebodygyrojerkmagstd"          
+[43] "frequencybodyaccmeanx"           
+[44] "frequencybodyaccmeany"           
+[45] "frequencybodyaccmeanz"           
+[46] "frequencybodyaccstdx"            
+[47] "frequencybodyaccstdy"            
+[48] "frequencybodyaccstdz"            
+[49] "frequencybodyaccjerkmeanx"       
+[50] "frequencybodyaccjerkmeany"       
+[51] "frequencybodyaccjerkmeanz"       
+[52] "frequencybodyaccjerkstdx"        
+[53] "frequencybodyaccjerkstdy"        
+[54] "frequencybodyaccjerkstdz"        
+[55] "frequencybodygyromeanx"          
+[56] "frequencybodygyromeany"          
+[57] "frequencybodygyromeanz"          
+[58] "frequencybodygyrostdx"           
+[59] "frequencybodygyrostdy"           
+[60] "frequencybodygyrostdz"           
+[61] "frequencybodyaccmagmean"         
+[62] "frequencybodyaccmagstd"          
+[63] "frequencybodybodyaccjerkmagmean" 
+[64] "frequencybodybodyaccjerkmagstd"  
+[65] "frequencybodybodygyromagmean"    
+[66] "frequencybodybodygyromagstd"     
+[67] "frequencybodybodygyrojerkmagmean"
+[68] "frequencybodybodygyrojerkmagstd" 
